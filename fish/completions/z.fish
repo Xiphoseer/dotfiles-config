@@ -1,5 +1,3 @@
-set -g __fish_bookmark_dir $HOME/.local/share/bookmarks/
-
 function __fish_z_bookmark
   for val in $argv
     echo -e $val\t(readlink (echo $__fish_bookmark_dir)$val)
